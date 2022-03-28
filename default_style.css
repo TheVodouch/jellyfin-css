@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap'); body, h1, h2, h3, h4 {
   font-family: 'Quicksand', sans-serif;
 }
-
+pero
 :root {--rounding: 5px;}
 
 /*Narrow margins, theme main page*/
@@ -35,31 +35,31 @@
 /*Shrink and square (or round) cast thumnails*/
 @media all and (min-width: 131.25em){
   #castContent .card.overflowPortraitCard {
-    width: 6.3vw !important; 
+    width: 6.3vw !important;
     font-size: 90% !important;
   }
 }
 @media all and (min-width: 120em) and (max-width: 131.25em){
   #castContent .card.overflowPortraitCard {
-    width: 6.4vw !important; 
+    width: 6.4vw !important;
     font-size: 90% !important;
   }
 }
 @media all and (min-width: 100em) and (max-width: 120em){
   #castContent .card.overflowPortraitCard {
-    width: 7.6vw !important; 
+    width: 7.6vw !important;
     font-size: 90% !important;
   }
 }
 @media all and (min-width: 87.5em) and (max-width: 100em){
   #castContent .card.overflowPortraitCard {
-    width: 9.3vw !important; 
+    width: 9.3vw !important;
     font-size: 90% !important;
   }
 }
 @media all and (min-width: 75em) and (max-width: 87.5em){
   #castContent .card.overflowPortraitCard {
-    width: 10.5vw !important; 
+    width: 10.5vw !important;
     font-size: 90% !important;
   }
 }
@@ -71,19 +71,19 @@
 }
 @media all and (min-width: 43.75em) and (max-width: 50em){
   #castContent .card.overflowPortraitCard {
-    width: 20.1vw !important; 
+    width: 20.1vw !important;
     font-size: 90% !important;
   }
 }
 @media all and (min-width: 25em) and (max-width: 43.75em){
   #castContent .card.overflowPortraitCard {
-    width: 31.2vw !important; 
+    width: 31.2vw !important;
     font-size: 90% !important;
   }
 }
 @media all and (max-width: 25em){
   #castContent .card.overflowPortraitCard {
-    width: 40vw !important; 
+    width: 40vw !important;
     font-size: 90% !important;
   }
 }
@@ -96,49 +96,49 @@
 
 @media all and (min-width: 131.25em){
   #castContent .cardScalable {
-    width: calc(6.3vw - 0.6em) !important; 
+    width: calc(6.3vw - 0.6em) !important;
     height: calc(6.3vw - 0.6em) !important;
   }
 }
 @media all and (min-width: 120em) and (max-width: 131.25em){
   #castContent .cardScalable {
-    width:  calc(6.4vw - 0.6em) !important; 
+    width:  calc(6.4vw - 0.6em) !important;
     height: calc(6.4vw - 0.6em) !important;
   }
 }
 @media all and (min-width: 100em) and (max-width: 120em){
   #castContent .cardScalable {
-    width:  calc(7.6vw - 0.6em) !important; 
+    width:  calc(7.6vw - 0.6em) !important;
     height: calc(7.6vw - 0.6em) !important;
   }
 }
 @media all and (min-width: 87.5em) and (max-width: 100em){
   #castContent .cardScalable {
-    width:  calc(9.3vw - 0.6em) !important; 
+    width:  calc(9.3vw - 0.6em) !important;
     height: calc(9.3vw - 0.6em) !important;
   }
 }
 @media all and (min-width: 75em) and (max-width: 87.5em){
   #castContent .cardScalable {
-    width:  calc(10.5vw - 0.6em) !important; 
+    width:  calc(10.5vw - 0.6em) !important;
     height: calc(10.5vw - 0.6em) !important;
   }
 }
 @media all and (min-width: 50em) and (max-width: 75em){
   #castContent .cardScalable {
-    width:  calc(15vw - 0.6em) !important; 
+    width:  calc(15vw - 0.6em) !important;
     height: calc(15vw - 0.6em) !important;
   }
 }
 @media all and (min-width: 43.75em) and (max-width: 50em){
   #castContent .cardScalable {
-    width:  calc(20.1vw - 0.6em) !important; 
+    width:  calc(20.1vw - 0.6em) !important;
     height: calc(20.1vw - 0.6em) !important;
   }
 }
 @media all and (min-width: 25em) and (max-width: 43.75em){
   #castContent .cardScalable {
-    width:  calc(31.2vw - 0.6em) !important; 
+    width:  calc(31.2vw - 0.6em) !important;
     height: calc(31.2vw - 0.6em) !important;
   }
 }
@@ -187,8 +187,8 @@
 /*Change backdrop behaviour on mobile pre-10.7.0*/
 @media all and (max-width: 32em) {
   .itemBackdrop {
-    width: 100vw!important; 
-    height: 100vh!important; 
+    width: 100vw!important;
+    height: 100vh!important;
     position: fixed;
   }
   .detailPageWrapperContainer {
@@ -202,7 +202,7 @@
 /*Accommodate ultrawide aspect ratios*/
 @media (min-aspect-ratio: 1.98/1) {
   .detailImageContainer .card {
-    width: 21vw; 
+    width: 21vw;
   }
   .detailPagePrimaryContainer {
     padding-left: 28.45vw !important;
@@ -213,7 +213,7 @@
 }
 @media (min-aspect-ratio: 2.7/1) {
   .detailImageContainer .card {
-    width: 16vw; 
+    width: 16vw;
   }
   .detailPagePrimaryContainer {
     padding-left: 23.45vw !important;
@@ -235,11 +235,11 @@
   padding: 0;
 }
 .secondary.listItem-overview.listItemBodyText {
-  height: 61px; 
+  height: 61px;
   margin: 0;
 }
 .listItemImageButton {
-  margin: auto; 
+  margin: auto;
   font-size: 1.6em !important;
 }
 @media all and (min-width: 100em){
@@ -250,7 +250,7 @@
     height: 115px;
   }
   .secondary.listItem-overview.listItemBodyText {
-    height: 4em; 
+    height: 4em;
     margin: 0;
   }
 }
@@ -339,7 +339,7 @@
 
 /*Top "task bar" make transparent and enlarge text*/
 .skinHeader {
-  background: none !important; 
+  background: none !important;
   background-color: rgba(0, 0, 0, 0) !important;
 }
 .headerTabs.sectionTabs {
@@ -347,7 +347,7 @@
   font-size: 110%;
 }
 .pageTitle {
-  margin-top: auto; 
+  margin-top: auto;
   margin-bottom: auto;
 }
 .pageTitleWithDefaultLogo {
@@ -387,9 +387,9 @@
 
 /*Make watched icon, footer on chapter thumnails (and other things), and count indicator dark and transparent*/
 .innerCardFooter,
-.countIndicator, 
+.countIndicator,
 .playedIndicator {
-  background: rgba(0,0,0,0.4); 
+  background: rgba(0,0,0,0.4);
   box-shadow: none;
 }
 .countIndicator {
@@ -412,16 +412,16 @@
 .toast,
 .paperList,
 .cardContent,
-.sessionNowPlayingInnerContent, 
-.listItem:hover, 
+.sessionNowPlayingInnerContent,
+.listItem:hover,
 .cardImage,
 .fab,
 .raised,
 .multiSelectCheckboxOutline,
 .itemSelectionPanel,
-.cardContent-button, 
-.cardContent-shadow, 
-.itemDetailImage, 
+.cardContent-button,
+.cardContent-shadow,
+.itemDetailImage,
 .cardOverlayButton-hover,
 .cardImageContainer,
 .cardPadder,
@@ -444,8 +444,8 @@
 .chapterThumbTextContainer,
 .chapterThumbContainer,
 .chapterThumb,
-.emby-input, 
-.emby-textarea, 
+.emby-input,
+.emby-textarea,
 .emby-select-withcolor,
 .nowPlayingPageImage,
 .upNextDialog-poster-img,
@@ -528,7 +528,7 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 
 /*Modified progress bar, play and item menu buttons*/
 .innerCardFooter.fullInnerCardFooter.innerCardFooterClear {
-  border-radius: 0px !important; 
+  border-radius: 0px !important;
   background: rgba(0,0,0,0.7);
 }
 
@@ -544,14 +544,14 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 }
 
 .innerCardFooter.fullInnerCardFooter.innerCardFooterClear {
-  border-radius: 0px !important; 
+  border-radius: 0px !important;
   background: rgba(0,0,0,0);
 }
 
 /*Accommodate mobile and set positions, I think*/
 .cardIndicators,
 .listItemIndicators {
-  right: 0.3em; 
+  right: 0.3em;
   top: 0.3em;
 }
 
@@ -631,15 +631,15 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 .sessionCardFooter {
   border: none;
 }
-.paperList, 
+.paperList,
 .visualCardBox {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .listItem-border {
-  border-color: rgba(255, 255, 255, 0) !important; 
+  border-color: rgba(255, 255, 255, 0) !important;
 }
 fieldset {
-  border: 1px solid rgba(40, 40, 40, 0.8); 
+  border: 1px solid rgba(40, 40, 40, 0.8);
   border-radius: 0.4em;
 }
 
@@ -921,7 +921,7 @@ a[data-role="button"] {
 
 
 /*Theme dialogues, drop downs, toast*/
-.dialog, 
+.dialog,
 .toast {
   background-color: rgba(0, 0, 0, 0.8);
 }
@@ -974,13 +974,13 @@ a[data-role="button"] {
 .emby-input,
 .emby-textarea,
 .emby-select-withcolor {
-  background: rgba(0, 0, 0, 0.2); 
+  background: rgba(0, 0, 0, 0.2);
   border: 0.01em solid rgba(255, 255, 255, 0.22);
 }
 .emby-input:focus,
 .emby-textarea:focus,
 .emby-select-withcolor:focus {
-  background: rgba(0, 0, 0, 0.5) !important; 
+  background: rgba(0, 0, 0, 0.5) !important;
 }
 
 .emby-textarea:focus,
