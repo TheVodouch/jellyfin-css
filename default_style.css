@@ -375,7 +375,7 @@
 
 /*Login background*/
 #loginPage {
-  background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)), url() !important;
+  background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)), url(https://raw.githubusercontent.com/TheVodouch/jellyfin-css/main/20220328_084516224_iOS.jpg?token=GHSAT0AAAAAABS6SYETPKP3KW2R4U3GOEVWYSBSDCQ) !important;
     background-size: cover !important;
     backrdrop-filter: blur(10px) !important;
     background-position: center !important;
