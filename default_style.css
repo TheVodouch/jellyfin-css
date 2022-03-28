@@ -375,9 +375,7 @@
 
 /*Login background*/
 #loginPage {
-  background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)), url(https://images-ext-2.discordapp.net/external/NWhOb1kUGg0_U87mNylndGs2Y75hsCRndxUZhV7mxSM/%3Fwidth%3D1920%26h
-    eight%3D1280%26cropmode%3Dnone/https/db3pap007files.storage.live.com/y4mImOjUZq7B-3dq7AWVBiC1pXM8IGbArVvHCLpixxEjBEzadh2zahR87ZsKjKJPCmhz-RjLsjALomfCHPmZgxzvvIYMZRQU0HBs0xwctulZp9
-    CKnAMCDWT3S2mqsd2wHOSg8prs64glHT9YMxUHu9RuLmww7UMkPcThSdb8Hi9qPs9Jb4AYm0ux3SxqhannM2E?width=1007&height=671) !important;
+  background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)), url() !important;
     background-size: cover !important;
     backrdrop-filter: blur(10px) !important;
     background-position: center !important;
