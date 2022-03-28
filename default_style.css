@@ -533,7 +533,6 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 }
 
 .itemProgressBar {
-  height: 2000em;
   background: #0000;
 }
 .playbackProgress>div {
