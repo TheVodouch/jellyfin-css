@@ -2,7 +2,7 @@
   font-family: 'Quicksand', sans-serif;
 }
 pero3
-:root {--rounding: 5px;}
+:root {--rounding: 15px;}
 
 /*Narrow margins, theme main page*/
 .cardBox-bottompadded {
