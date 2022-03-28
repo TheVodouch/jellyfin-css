@@ -350,6 +350,10 @@
   margin-top: auto; 
   margin-bottom: auto;
 }
+.pageTitleWithDefaultLogo {
+  background-image: url(../../assets/img/banner-light.png);
+  opacity: 0;
+}
 .emby-tab-button {
   padding: 1.75em 1.7em;
 }
