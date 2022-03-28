@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap'); body, h1, h2, h3, h4 {
   font-family: 'Quicksand', sans-serif;
 }
-pero1
+pero
 :root {--rounding: 5px;}
 
 /*Narrow margins, theme main page*/
@@ -904,8 +904,7 @@ div[data-role=controlgroup] a[data-role=button]+a[data-role=button] {
 .raised,
 .fab,
 a[data-role="button"] {
-  background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)), url(https://raw.githubusercontent.com/TheVodouch/jellyfin-css/main/20220328_084516224_iOS.jpg) !important;
-  filter: blur(10px);
+  background: rgba(40, 40, 40, 0.8) !important;
 	transition: all 0.2s !important;
 }
 
