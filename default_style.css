@@ -905,6 +905,7 @@ div[data-role=controlgroup] a[data-role=button]+a[data-role=button] {
 .fab,
 a[data-role="button"] {
   background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)), url(https://raw.githubusercontent.com/TheVodouch/jellyfin-css/main/20220328_084516224_iOS.jpg) !important;
+  filter: blur(10px);
 	transition: all 0.2s !important;
 }
 
