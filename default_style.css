@@ -1,11 +1,13 @@
-/*ver 1.0*/
+/*ver 1.1*/
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap'); body, h1, h2, h3, h4 {
   font-family: 'Quicksand', sans-serif;
 }
 
-:root {--rounding: 15px;}
-      {--pointer: pointer;}
+:root {
+  --rounding: 15px;
+  --pointer: pointer;
+  }
 
 /*Narrow margins, theme main page*/
 .cardBox-bottompadded {
@@ -1034,4 +1036,18 @@ a[data-role="button"] {
 }
 .defaultCardBackground5 {
 	background-color: #666666;
+}
+
+/* Kurzor */
+.emby-scrollbuttons {
+ cursor: var(--pointer) !important;
+}
+.sectionTitle {
+ cursor: var(--pointer) !important;
+}
+
+/* Barva odkliknutí */
+.playstatebutton-icon-played, .ratingbutton-icon-withrating {
+ color: #00a4dc !important;
+ cursor: pointer !important;
 }
