@@ -1,8 +1,11 @@
+/*ver 1.0*/
+
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap'); body, h1, h2, h3, h4 {
   font-family: 'Quicksand', sans-serif;
 }
 
 :root {--rounding: 15px;}
+      {--pointer: pointer;}
 
 /*Narrow margins, theme main page*/
 .cardBox-bottompadded {
@@ -405,8 +408,10 @@
   border-bottom-left-radius: var(--rounding);
   border-bottom-right-radius: var(--rounding);
 }
+/*Plakát filmu*/
 .cardOverlayContainer {
 	border-radius: var(--rounding) !important;
+  cursor: var(--pointer);
 }
 .primaryImageWrapper > img,
 .toast,
@@ -452,6 +457,7 @@
 .upNextContainer,
 .cardOverlayButtonIcon {
   border-radius: var(--rounding) !important;
+  cursor: var(--pointer);
 }
 .osdPoster img {
   border-radius: var(--rounding); border: none;
