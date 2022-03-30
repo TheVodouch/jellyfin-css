@@ -1,4 +1,4 @@
-/*ver 1.1*/
+/*ver 1.15*/
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap'); body, h1, h2, h3, h4 {
   font-family: 'Quicksand', sans-serif;
@@ -386,7 +386,7 @@
 #loginPage {
   background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)), url(https://raw.githubusercontent.com/TheVodouch/jellyfin-css/main/20220328_084516224_iOS.jpg) !important;
     background-size: cover !important;
-    backrdrop-filter: blur(10px) !important;
+    backdrop-filter: blur(10px) !important;
     background-position: center !important;
 }
 
@@ -1050,4 +1050,21 @@ a[data-role="button"] {
 .playstatebutton-icon-played, .ratingbutton-icon-withrating {
  color: #00a4dc !important;
  cursor: pointer !important;
+}
+
+/* posunutí hlavního plakátu filmu */
+.detailImageContainer .card .cardBox {
+ margin-top: 12.5%;
+}
+
+/* odstranění next up/další díly */
+.nextUpSection { display: none; }
+
+/* pozadí home */
+.backdropImage { display: none; }
+.backgroundContainer {
+  background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)), url(https://raw.githubusercontent.com/TheVodouch/jellyfin-css/main/20220328_084516224_iOS.jpg) !important;
+  background-size: cover !important;
+  backdrop-filter: blur(10px) !important;
+  background-position: center !important;
 }
