@@ -386,7 +386,6 @@
 #loginPage {
   background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)), url(https://raw.githubusercontent.com/TheVodouch/jellyfin-css/main/20220328_084516224_iOS.jpg) !important;
     background-size: cover !important;
-    backdrop-filter: blur(10px) !important;
     background-position: center !important;
 }
 
@@ -1065,6 +1064,5 @@ a[data-role="button"] {
 .backgroundContainer {
   background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)), url(https://raw.githubusercontent.com/TheVodouch/jellyfin-css/main/20220328_084516224_iOS.jpg) !important;
   background-size: cover !important;
-  backdrop-filter: blur(10px) !important;
   background-position: center !important;
 }
