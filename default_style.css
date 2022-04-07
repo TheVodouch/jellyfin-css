@@ -1,10 +1,11 @@
-/*ver 1.15 pero2*/
+/*ver 1.3 */
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap'); body, h1, h2, h3, h4 {
   font-family: 'Quicksand', sans-serif;
 }
 
 :root {
+  --spacecol: linear-gradient(140deg, #42275a, #734b6d);
   --rounding: 15px;
   --pointer: pointer;
   }
@@ -555,13 +556,23 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
   background: rgba(0,0,0,0);
 }
 
-/*Accommodate mobile and set positions, I think*/
-.cardIndicators,
-.listItemIndicators {
-  right: 0.3em;
-  top: 0.3em;
+/*barva ukazatelu na zhlédnutí a srdíčkování*/
+.cardIndicators {
+  right: 0;
+  top: 0;
+}
+.indicator {
+  background: var(--spacecol) !important;
+  border-radius: 0px 0px 0px 5px;
+  padding: 0.1em;
+  box-shadow: 0 0 10px 1px black;
+  color: white;
 }
 
+.indicators {
+  right: 0;
+  top: 0;
+}
 @media all and (min-width: 70em){
   .cardOverlayFab-primary {
     background-color: #00000000;
@@ -616,6 +627,22 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 }
 .navMenuOptionText {
     margin-top: 0;
+}
+.navMenuOption {
+  background: transparent !important;
+  flex-grow: 0 !important;
+}
+
+.navMenuOption::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: var(--spacecol) !important;
+  z-index: -1;
+  left: 0;
+  opacity: 0%;
+  transition: opacity 0.2s;
 }
 .backgroundProgress > div {
     background-color: #0000;
@@ -1048,7 +1075,7 @@ a[data-role="button"] {
 
 /* Barva odkliknutí */
 .playstatebutton-icon-played, .ratingbutton-icon-withrating {
- color: #00a4dc !important;
+ color: #7d599e !important;
  cursor: pointer !important;
 }
 
@@ -1067,4 +1094,8 @@ a[data-role="button"] {
   background-size: cover !important;
   backdrop-filter: blur(10px) !important;
   background-position: center !important;
+}
+/* Zvětšení plakátu, když se na něj ukáže*/
+.card:not(.overflowSquareCard):hover .cardImageContainer::before {
+  transform: scale(1.2);
 }
