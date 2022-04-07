@@ -935,7 +935,7 @@ a[data-role="button"] {
   background-color: rgba(0, 164, 220, 0.2);
 }
 .mainDrawer {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.85);
 }
 .navMenuOption:hover {
   background: rgba(0, 164, 220, 0.2);
