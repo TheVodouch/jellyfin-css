@@ -1,4 +1,4 @@
-/*ver 1.4 */
+/*ver 1.5 */
 
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&display=swap'); body, h1, h2, h3, h4 {
   font-family: 'Exo 2', sans-serif;
@@ -1096,4 +1096,8 @@ a[data-role="button"] {
 /* Zvětšení plakátu, když se na něj ukáže*/
 .card:not(.overflowSquareCard):hover .cardImageContainer::before {
   transform: scale(1.2);
+}
+
+.mainAnimatedPage {
+scale: auto;
 }
