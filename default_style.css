@@ -1080,7 +1080,7 @@ a[data-role="button"] {
 
 /* posunutí hlavního plakátu filmu */
 .detailImageContainer .card .cardBox {
- margin-top: 12.5%;
+ margin-top: 100px;
 }
 
 /* odstranění next up/další díly */
