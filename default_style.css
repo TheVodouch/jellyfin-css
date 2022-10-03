@@ -1126,7 +1126,3 @@ a[data-role="button"] {
 .card:not(.overflowSquareCard):hover .cardImageContainer::before {
   transform: scale(1.2);
 }
-
-.mainAnimatedPage {
-scale: 120%;
-}
