@@ -1089,7 +1089,7 @@ a[data-role="button"] {
 /* pozadí home */
 .backdropImage { display: none; }
 .backgroundContainer {
-  background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)), url(https://theme.watchingweek.cz/20220328_084516224_iOS.jpg) !important;
+  background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)), url(https://theme.watchingweek.cz/background.jpg) !important;
   background-size: cover !important;
   background-position: center !important;
 }
