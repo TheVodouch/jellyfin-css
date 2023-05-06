@@ -1,4 +1,4 @@
-/*ver 1.6 */
+/*ver 1.7 */
 
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&display=swap'); body, h1, h2, h3, h4 {
   font-family: 'Exo 2', sans-serif;
@@ -1089,7 +1089,7 @@ a[data-role="button"] {
 /* pozadí home */
 .backdropImage { display: none; }
 .backgroundContainer {
-  background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)), url(https://theme.watchingweek.cz/background.jpg) !important;
+  background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)), url(https://cdn.jsdelivr.net/gh/TheVodouch/jellyfin-css@0ed1fefb808dbba704021e622348c991d9cd8656/background.jpg) !important;
   background-size: cover !important;
   background-position: center !important;
 }
