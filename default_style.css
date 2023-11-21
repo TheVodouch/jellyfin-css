@@ -1,1130 +1,1079 @@
-/*ver 2.2 optimized */
+/*ver 2.3 optimized/beautified */
 
 @import "https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&display=swap";
 
-body,h1,h2,h3,h4 {
-font-family:'Exo 2',sans-serif
-}
-
-:root {
---spacecol:linear-gradient(140deg,#42275a,#734b6d);
---rounding:15px;
---pointer:pointer
-}
-
-.cardBox-bottompadded {
-margin-bottom:.6em!important
-}
-
-.itemsContainer > .card > .cardBox {
-margin-right:.8em
-}
-
-.raised.homeLibraryButton {
-background:rgba(0,0,0,0.3)!important
-}
-
-.raised.homeLibraryButton:hover {
-background:rgba(0,0,0,0.5)!important;
-transition:filter .2s
-}
-
-.raised.homeLibraryButton {
-transition:filter .2s
-}
-
-.homeLibraryButton {
-min-width:12em;
-margin:.4em
-}
-
-.backdropImage {
-filter:blur(60px) saturate(200%) contrast(160%) brightness(25%)
-}
-
-.backgroundContainer.withBackdrop {
-background-color:rgba(0,0,0,0)
-}
-
-@media all and (min-width: 131.25em) {
-#castContent .card.overflowPortraitCard {
-width:6.3vw!important;
-font-size:90%!important
-}
-}
-
-@media all and (min-width: 120em) and (max-width: 131.25em) {
-#castContent .card.overflowPortraitCard {
-width:6.4vw!important;
-font-size:90%!important
-}
-}
-
-@media all and (min-width: 100em) and (max-width: 120em) {
-#castContent .card.overflowPortraitCard {
-width:7.6vw!important;
-font-size:90%!important
-}
-}
-
-@media all and (min-width: 87.5em) and (max-width: 100em) {
-#castContent .card.overflowPortraitCard {
-width:9.3vw!important;
-font-size:90%!important
-}
-}
-
-@media all and (min-width: 75em) and (max-width: 87.5em) {
-#castContent .card.overflowPortraitCard {
-width:10.5vw!important;
-font-size:90%!important
-}
-}
-
-@media all and (min-width: 50em) and (max-width: 75em) {
-#castContent .card.overflowPortraitCard {
-width:15vw!important;
-font-size:90%!important
-}
-}
-
-@media all and (min-width: 43.75em) and (max-width: 50em) {
-#castContent .card.overflowPortraitCard {
-width:20.1vw!important;
-font-size:90%!important
-}
-}
-
-@media all and (min-width: 25em) and (max-width: 43.75em) {
-#castContent .card.overflowPortraitCard {
-width:31.2vw!important;
-font-size:90%!important
-}
-}
-
-@media all and (max-width: 25em) {
-#castContent .card.overflowPortraitCard {
-width:40vw!important;
-font-size:90%!important
-}
-}
-
-.cardPadder {
-background-color:#0000!important;
-box-shadow:none!important
-}
-
-@media all and (min-width: 131.25em) {
-#castContent .cardScalable {
-width:calc(6.3vw - 0.6em)!important;
-height:calc(6.3vw - 0.6em)!important
-}
-}
-
-@media all and (min-width: 120em) and (max-width: 131.25em) {
-#castContent .cardScalable {
-width:calc(6.4vw - 0.6em)!important;
-height:calc(6.4vw - 0.6em)!important
-}
-}
-
-@media all and (min-width: 100em) and (max-width: 120em) {
-#castContent .cardScalable {
-width:calc(7.6vw - 0.6em)!important;
-height:calc(7.6vw - 0.6em)!important
-}
-}
-
-@media all and (min-width: 87.5em) and (max-width: 100em) {
-#castContent .cardScalable {
-width:calc(9.3vw - 0.6em)!important;
-height:calc(9.3vw - 0.6em)!important
-}
-}
-
-@media all and (min-width: 75em) and (max-width: 87.5em) {
-#castContent .cardScalable {
-width:calc(10.5vw - 0.6em)!important;
-height:calc(10.5vw - 0.6em)!important
-}
-}
-
-@media all and (min-width: 50em) and (max-width: 75em) {
-#castContent .cardScalable {
-width:calc(15vw - 0.6em)!important;
-height:calc(15vw - 0.6em)!important
-}
-}
-
-@media all and (min-width: 43.75em) and (max-width: 50em) {
-#castContent .cardScalable {
-width:calc(20.1vw - 0.6em)!important;
-height:calc(20.1vw - 0.6em)!important
-}
-}
-
-@media all and (min-width: 25em) and (max-width: 43.75em) {
-#castContent .cardScalable {
-width:calc(31.2vw - 0.6em)!important;
-height:calc(31.2vw - 0.6em)!important
-}
-}
-
-@media all and (max-width: 25em) {
-#castContent .cardScalable {
-width:calc(40vw - 0.6em)!important;
-height:calc(40vw - 0.6em)!important
-}
-}
-
-.detailImageContainer .card {
-position:fixed
-}
-
-.mainDetailButtons {
-font-size:120%
-}
-
-@media all and (max-width: 100em) {
-.mainDetailButtons {
-font-size:155%
-}
-}
-
-.detailSectionContent {
-max-width:66em
-}
-
-.trackSelections {
-max-width:22em
-}
-
-.detailLogo {
-display:none
-}
-
-.detailPagePrimaryContainer {
-background:rgba(0,0,0,0)!important
-}
-
-@media all and (min-width: 32em) {
-.itemBackdrop {
-display:none
-}
-
-.layout-desktop .detailRibbon {
-margin-top:13vh
-}
-}
-
-@media all and (max-width: 32em) {
-.itemBackdrop {
-width:100vw!important;
-height:100vh!important;
-position:fixed
-}
-
-.detailPageWrapperContainer {
-margin-top:5em !important
-}
-
-.itemBackdrop {
-filter:blur(45px) saturate(200%) contrast(160%) brightness(25%)
-}
-}
-
-@media (min-aspect-ratio: 1.98/1) {
-.detailImageContainer .card {
-width:21vw
-}
-
-.detailPagePrimaryContainer {
-padding-left:28.45vw!important
-}
-
-.detailPageContent {
-padding-left:28.45vw
-}
-}
-
-@media (min-aspect-ratio: 2.7/1) {
-.detailImageContainer .card {
-width:16vw
-}
-
-.detailPagePrimaryContainer {
-padding-left:23.45vw!important
-}
-
-.detailPageContent {
-padding-left:23.45vw
-}
-}
-
-.listItem:hover {
-transition:.2s;
-background:rgba(0,0,0,0.4)
-}
-
-.listItemImage.listItemImage-large.itemAction.lazy {
-transition:filter .2s
-}
-
-.listItemImageButton-icon {
-padding:0
-}
-
-.secondary.listItem-overview.listItemBodyText {
-height:61px;
-margin:0
-}
-
-.listItemImageButton {
-margin:auto;
-font-size:1.6em!important
-}
-
-@media all and (min-width: 100em) {
-.listItemImage.listItemImage-large.itemAction.lazy {
-height:110px
-}
-
-.listItem-content {
-height:115px
-}
-
-.secondary.listItem-overview.listItemBodyText {
-height:4em;
-margin:0
-}
-}
-
-@media all and (max-width: 100em) {
-.listItemImage.listItemImage-large.itemAction.lazy {
-height:80px
-}
-
-.listItem-content {
-height:85px
-}
-
-.secondary.listItem-overview.listItemBodyText {
-height:2.5em;
-margin:0
-}
-}
-
-.missingIndicator,.unairedIndicator {
-background:#ae3030eb;
-padding:.3em .6em;
-border-radius:var(--rounding);
-color:#fff
-}
-
-#dashboardPage,#dashboardGeneralPage,#userProfilesPage,#devicesPage,#serverActivityPage,#liveTvStatusPage,#liveTvSettingsPage,#networkingPage,#apiKeysPage,#logPage,#notificationSettingsPage,#scheduledTasksPage,#itemDetailPage {
-mask-image:linear-gradient(180deg,rgba(0,0,0,0) 0px,rgba(0,0,0,0) 60px,#000 90px);
--webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,0) 0px,rgba(0,0,0,0) 60px,#000 90px);
-overflow:scroll
-}
-
-@media all and (min-width: 100em) {
-#indexPage,#moviesPage,#tvRecommendedPage,#musicRecommendedPage {
-mask-image:linear-gradient(180deg,rgba(0,0,0,0) 0px,rgba(0,0,0,0) 70px,#000 120px);
--webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,0) 0px,rgba(0,0,0,0) 70px,#000 120px);
-overflow:scroll
-}
-
-#encodingSettingsPage,#mediaLibraryPage,#dlnaSettingsPage,#pluginsPage {
-mask-image:linear-gradient(180deg,rgba(0,0,0,0) 0px,rgba(0,0,0,0) 60px,#000 90px);
--webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,0) 0px,rgba(0,0,0,0) 60px,#000 90px);
-overflow:scroll
-}
-}
-
-@media all and (max-width: 100em) {
-#indexPage,#moviesPage,#tvRecommendedPage,#encodingSettingsPage,#mediaLibraryPage,#dlnaSettingsPage,#pluginsPage,#musicRecommendedPage {
-mask-image:linear-gradient(180deg,rgba(0,0,0,0) 0px,rgba(0,0,0,0) 100px,#000 130px);
--webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,0) 0px,rgba(0,0,0,0) 100px,#000 135px);
-overflow:scroll;
-margin-top:30px
-}
-
-#indexPage,#moviesPage,#tvRecommendedPage,#encodingSettingsPage,#mediaLibraryPage,#dlnaSettingsPage,#pluginsPage,#musicRecommendedPage {
-mask-image:linear-gradient(180deg,rgba(0,0,0,0) 0px,rgba(0,0,0,0) 100px,#000 130px);
--webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,0) 0px,rgba(0,0,0,0) 100px,#000 130px);
-overflow:scroll;
-margin-top:20px
-}
-}
-
-.skinHeader {
-background:none!important;
-background-color:rgba(0,0,0,0)!important
-}
-
-.headerTabs.sectionTabs {
-text-size-adjust:110%;
-font-size:110%
-}
-
-.pageTitle {
-margin-top:auto;
-margin-bottom:auto
-}
-
-.pageTitleWithDefaultLogo {
-background-image:url(../../assets/img/banner-light.png);
-opacity:0
-}
-
-.emby-tab-button {
-padding:1.75em 1.7em
-}
-
-#loginPage .readOnlyContent,#loginPage form {
-max-width:22em
-}
-
-#loginPage h1 {
-display:none
-}
-
-#loginPage .padded-left.padded-right.padded-bottom-page {
-margin-top:50px
-}
-
-#loginPage .raised.cancel.block.btnForgotPassword.emby-button {
-display:none
-}
-
-#loginPage {
-background-image:linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),url(https://theme.watchingweek.cz/20220328_084516224_iOS.jpg)!important;
-background-size:cover!important;
-background-position:center!important
-}
-
-.innerCardFooter,.countIndicator,.playedIndicator {
-background:rgba(0,0,0,0.4);
-box-shadow:none
-}
-
-.countIndicator {
-box-shadow:none
-}
-
-.formDialogHeader {
-border-top-left-radius:var(--rounding);
-border-top-right-radius:var(--rounding)
-}
-
-.formDialogFooter {
-border-bottom-left-radius:var(--rounding);
-border-bottom-right-radius:var(--rounding)
-}
-
-.cardOverlayContainer {
-border-radius:var(--rounding)!important;
-cursor:var(--pointer)
-}
-
-.primaryImageWrapper > img,.toast,.paperList,.cardContent,.sessionNowPlayingInnerContent,.listItem:hover,.cardImage,.fab,.raised,.multiSelectCheckboxOutline,.itemSelectionPanel,.cardContent-button,.cardContent-shadow,.itemDetailImage,.cardOverlayButton-hover,.cardImageContainer,.cardPadder,.listItemImage,.listItemImageButton,.listItemButton,.headerButton,.paper-icon-button-light,.innerCardFooter,.blurhash-canvas,.dialog,.countIndicator,.playedIndicator,.listItemIcon,.listItem-border,.button-flat,.visualCardBox,.checkboxOutline,.emby-select-withcolor,.chapterThumbTextContainer,.chapterThumbContainer,.chapterThumb,.emby-input,.emby-textarea,.emby-select-withcolor,.nowPlayingPageImage,.upNextDialog-poster-img,.upNextContainer,.cardOverlayButtonIcon {
-border-radius:var(--rounding)!important;
-cursor:var(--pointer)
-}
-
-.osdPoster img {
-border-radius:var(--rounding);
-border:none
-}
-
-.mdl-slider::-moz-range-thumb {
-border-radius:var(--rounding)
-}
-
-.mdl-slider::-ms-thumb {
-border-radius:var(--rounding)
-}
-
-.mdl-slider::-webkit-slider-thumb {
-border-radius:var(--rounding)
-}
-
-div[data-role="controlgroup"] a[data-role="button"]:first-child {
-border-bottom-left-radius:var(--rounding);
-border-top-left-radius:var(--rounding)
-}
-
-div[data-role="controlgroup"] a[data-role="button"]:last-child {
-border-bottom-right-radius:var(--rounding);
-border-top-right-radius:var(--rounding)
-}
-
-#dashboardPage .cardContent,#dashboardPage .sessionNowPlayingInnerContent {
-border-radius:var(--rounding) var(--rounding) 0 0!important
-}
-
-#divVirtualFolders .cardImageContainer,#divVirtualFolders .cardContent {
-border-radius:var(--rounding) var(--rounding) 0 0!important
-}
-
-#userProfilesPage .cardImage,#userProfilesPage .cardContent {
-border-radius:var(--rounding) var(--rounding) 0 0!important
-}
-
-.appfooter {
-background:rgba(0,0,0,0.9)
-}
-
-.subtitleappearance-preview {
-background:linear-gradient(140deg,#444,#111)!important
-}
-
-.layout-mobile :not(.sectionTitleContainer-cards)>.sectionTitle-cards {
-padding-top:0
-}
-
-.sectionTitle {
-margin-left:.4em!important;
-margin-top:.2em!important;
-margin-bottom:.2em!important
-}
-
-.sectionTitleTextButton > .material-icons {
-margin:0
-}
-
-.layout-mobile .sectionTitleTextButton > .material-icons {
-padding-top:.2em
-}
-
-.nowPlayingBarCurrentTime {
-width:6em
-}
-
-.osdTextContainer {
-margin:0!important;
-margin-top:.2em!important;
-padding-left:.5em!important;
-padding-right:.5em!important
-}
-
-.headerUserButtonRound {
-border-radius:50px!important
-}
-
-.innerCardFooter.fullInnerCardFooter.innerCardFooterClear {
-border-radius:0!important;
-background:rgba(0,0,0,0.7)
-}
-
-.itemProgressBar {
-background:#0000
-}
-
-.playbackProgress>div {
-background-color:rgba(255,255,255,0.75)
-}
-
-.transcodingProgress>div,.itemProgressBarForeground {
-background-color:#7d599e
-}
-
-.innerCardFooter.fullInnerCardFooter.innerCardFooterClear {
-border-radius:0!important;
-background:rgba(0,0,0,0)
-}
-
-.cardIndicators {
-right:0;
-top:0
-}
-
-.indicator {
-background:var(--spacecol)!important;
-border-radius:0 0 0 5px;
-padding:.1em;
-box-shadow:0 0 10px 1px #000;
-color:#fff
-}
-
-.indicators {
-right:0;
-top:0
-}
-
-@media all and (min-width: 70em) {
-.cardOverlayFab-primary {
-background-color:#00000000
-}
-
-.cardOverlayButtonIcon {
-background-color:#00000000!important
-}
-
-.cardOverlayContainer {
-background-color:rgba(0,0,0,0.7)
-}
-}
-
-@media all and (max-width: 70em) {
-.cardOverlayButtonIcon {
-background-color:rgba(0,0,0,0.5)!important
-}
-
-.cardOverlayButton {
-padding:.3em
-}
-}
-
-.button-flat:hover {
-background:rgba(0,0,0,0.4)
-}
-
-.button-flat {
-padding:.5em!important;
-margin:.2em!important
-}
-
-#user_usage_report_table,.detailTable {
-background:rgba(0,0,0,.5);
-border-radius:var(--rounding)
-}
-
-.detailTableBodyRow-shaded {
-background:#0000!important
-}
-
-.infoBanner {
-background:#101010
-}
-
-.navMenuOptionText {
-margin-top:0
-}
-
-.navMenuOption {
-background:transparent!important;
-flex-grow:0!important
-}
-
-.navMenuOption::before {
-content:"";
-width:100%;
-height:100%;
-position:absolute;
-background:var(--spacecol)!important;
-z-index:-1;
-left:0;
-opacity:0;
-transition:opacity .2s
-}
-
-.backgroundProgress > div {
-background-color:#0000
-}
-
-.visualCardBox,.cardImageContainer {
-box-shadow:none
-}
-
-.mdl-switch__input:checked + .mdl-switch__label + .mdl-switch__trackContainer > .mdl-switch__track {
-background:rgba(120,120,120,0.6)
-}
-
-.mdl-switch__input:checked + .mdl-switch__label + .mdl-switch__trackContainer > .mdl-switch__thumb {
-background:#fff
-}
-
-.dashboardSection h3 {
-margin-left:.5em
-}
-
-.sessionCardFooter {
-border:none
-}
-
-.paperList,.visualCardBox {
-background-color:rgba(0,0,0,0.5)
-}
-
-.listItem-border {
-border-color:rgba(255,255,255,0)!important
-}
-
-fieldset {
-border:1px solid rgba(40,40,40,0.8);
-border-radius:.4em
-}
-
-progress {
-background:rgba(0,0,0,0.5)!important;
-border-radius:var(--rounding);
-border:1px solid rgba(255,255,255,0.22)
-}
-
-progress::-webkit-progress-bar {
-background:rgba(0,0,0,0.5)!important;
-border-radius:var(--rounding);
-border:0 solid rgba(255,255,255,0.22)
-}
-
-progress::-moz-progress-bar {
-background-color:rgba(255,255,255,0.75);
-border-radius:var(--rounding)
-}
-
-progress::-webkit-progress-value {
-background-color:rgba(255,255,255,0.75);
-border-radius:var(--rounding)
-}
-
-#divRunningTasks span {
-color:rgba(255,255,255,0.75)!important
-}
-
-.taskProgressOuter,.taskProgressInner {
-border-radius:var(--rounding)!important
-}
-
-.taskProgressOuter {
-background:rgba(0,0,0,0.5)!important;
-border:1px solid rgba(255,255,255,0.22)
-}
-
-.taskProgressInner {
-background:rgba(255,255,255,0.75)!important
-}
-
-#scheduledTasksPage span {
-color:rgba(255,255,255,0.75)!important
-}
-
-.chapterThumb {
-height:14vh;
-min-width:14vh
-}
-
-.chapterThumbText {
-font-size:1em
-}
-
-.sliderBubble {
-background:#0000
-}
-
-.progressring-spiner {
-border-color:rgba(var(--accent));
-border-width:.35em
-}
-
-.progressring {
-margin:.4em
-}
-
-.progressring-bg {
-display:none
-}
-
-.blurhash-canvas {
-filter:opacity(60%) saturate(60%)
-}
-
-div[data-role="controlgroup"] a.ui-btn-active {
-background:rgba(0,0,0,0.5)!important;
-color:#fff!important
-}
-
-a[data-role="button"]:hover {
-background:rgba(80,80,80,0.8)!important
-}
-
-div[data-role=controlgroup] a[data-role=button]+a[data-role=button] {
-margin:0!important
-}
-
-.starIcon {
-color:rgba(255,255,255,.8)
-}
-
-.startTimeText,.endTimeText {
-width:3.4em;
-display:block;
-text-align:center
-}
-
-.osdTitle {
-margin-left:.5em
-}
-
-.mdl-slider-background-lower {
-background-color:#fff
-}
-
-.mdl-slider::-moz-range-thumb {
-background:#fff
-}
-
-.mdl-slider::-ms-thumb {
-background:#fff
-}
-
-.mdl-slider::-webkit-slider-thumb {
-background:#fff
-}
-
-.iconOsdProgressInner {
-background:#fff
-}
-
-.videoOsdBottom {
-background:rgba(0,0,0,.7);
-padding-top:1em
-}
-
-.skinHeader-withBackground.osdHeader {
-background:rgba(0,0,0,.7)!important;
-height:5em
-}
-
-.nowPlayingPageImage {
-border:none
-}
-
-.upNextDialog-countdownText {
-color:#fff
-}
-
-.syncPlayIconCircle {
-color:rgba(255,255,255,1)!important;
-text-shadow:none!important
-}
-
 @-webkit-keyframes pulse {
-0% {
--webkit-transform:scale(.95);
-transform:scale(.95);
-color:rgba(0,0,0,.7);
-background:rgba(0,0,0,.3);
-box-shadow:0 0 0 0 rgba(0,0,0,.3)
-}
+    0% {
+        -webkit-transform: scale(.95);
+        transform: scale(.95);
+        color: rgba(0,0,0,.7);
+        background: rgba(0,0,0,.3);
+        box-shadow: 0 0 0 0 rgba(0,0,0,.3)
+    }
 
-70% {
--webkit-transform:scale(1);
-transform:scale(1);
-color:rgba(0,0,0,.6);
-background:rgba(0,0,0,0);
-box-shadow:0 0 0 60px rgba(0,0,0,0)
-}
+    70% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        color: rgba(0,0,0,.6);
+        background: 0 0;
+        box-shadow: 0 0 0 60px transparent
+    }
 
-to {
--webkit-transform:scale(.95);
-transform:scale(.95);
-color:rgba(0,0,0,.7);
-background:rgba(0,0,0,.3);
-box-shadow:0 0 0 0 rgba(0,0,0,0)
-}
+    to {
+        -webkit-transform: scale(.95);
+        transform: scale(.95);
+        color: rgba(0,0,0,.7);
+        background: rgba(0,0,0,.3);
+        box-shadow: 0 0 0 0 transparent
+    }
 }
 
 @keyframes pulse {
-0% {
--webkit-transform:scale(.95);
-transform:scale(.95);
-color:rgba(0,0,0,.7);
-background:rgba(0,0,0,.3);
-box-shadow:0 0 0 0 rgba(0,0,0,.3)
-}
+    0% {
+        -webkit-transform: scale(.95);
+        transform: scale(.95);
+        color: rgba(0,0,0,.7);
+        background: rgba(0,0,0,.3);
+        box-shadow: 0 0 0 0 rgba(0,0,0,.3)
+    }
 
-70% {
--webkit-transform:scale(1);
-transform:scale(1);
-color:rgba(0,0,0,.6);
-background:rgba(0,0,0,0);
-box-shadow:0 0 0 60px rgba(0,0,0,0)
-}
+    70% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        color: rgba(0,0,0,.6);
+        background: 0 0;
+        box-shadow: 0 0 0 60px transparent
+    }
 
-to {
--webkit-transform:scale(.95);
-transform:scale(.95);
-color:rgba(0,0,0,.7);
-background:rgba(0,0,0,.3);
-box-shadow:0 0 0 0 rgba(0,0,0,0)
-}
+    to {
+        -webkit-transform: scale(.95);
+        transform: scale(.95);
+        color: rgba(0,0,0,.7);
+        background: rgba(0,0,0,.3);
+        box-shadow: 0 0 0 0 transparent
+    }
 }
 
 @-webkit-keyframes infinite-pulse {
-0% {
--webkit-transform:scale(.95);
-transform:scale(.95);
-color:rgba(0,0,0,.7);
-background:rgba(0,0,0,.3);
-box-shadow:0 0 0 0 rgba(0,0,0,.3)
-}
+    0% {
+        -webkit-transform: scale(.95);
+        transform: scale(.95);
+        color: rgba(0,0,0,.7);
+        background: rgba(0,0,0,.3);
+        box-shadow: 0 0 0 0 rgba(0,0,0,.3)
+    }
 
-70% {
--webkit-transform:scale(1);
-transform:scale(1);
-color:rgba(0,0,0,.6);
-background:rgba(0,0,0,0);
-box-shadow:0 0 0 60px rgba(0,0,0,0)
-}
+    70% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        color: rgba(0,0,0,.6);
+        background: 0 0;
+        box-shadow: 0 0 0 60px transparent
+    }
 
-to {
--webkit-transform:scale(.95);
-transform:scale(.95);
-color:rgba(0,0,0,.7);
-background:rgba(0,0,0,.3);
-box-shadow:0 0 0 0 rgba(0,0,0,0)
-}
+    to {
+        -webkit-transform: scale(.95);
+        transform: scale(.95);
+        color: rgba(0,0,0,.7);
+        background: rgba(0,0,0,.3);
+        box-shadow: 0 0 0 0 transparent
+    }
 }
 
 @keyframes infinite-pulse {
-0% {
--webkit-transform:scale(.95);
-transform:scale(.95);
-color:rgba(0,0,0,.7);
-background:rgba(0,0,0,.3);
-box-shadow:0 0 0 0 rgba(0,0,0,.3)
+    0% {
+        -webkit-transform: scale(.95);
+        transform: scale(.95);
+        color: rgba(0,0,0,.7);
+        background: rgba(0,0,0,.3);
+        box-shadow: 0 0 0 0 rgba(0,0,0,.3)
+    }
+
+    70% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        color: rgba(0,0,0,.6);
+        background: 0 0;
+        box-shadow: 0 0 0 60px transparent
+    }
+
+    to {
+        -webkit-transform: scale(.95);
+        transform: scale(.95);
+        color: rgba(0,0,0,.7);
+        background: rgba(0,0,0,.3);
+        box-shadow: 0 0 0 0 transparent
+    }
 }
 
-70% {
--webkit-transform:scale(1);
-transform:scale(1);
-color:rgba(0,0,0,.6);
-background:rgba(0,0,0,0);
-box-shadow:0 0 0 60px rgba(0,0,0,0)
+body,h1,h2,h3,h4 {
+    font-family: "Exo 2",sans-serif
 }
 
-to {
--webkit-transform:scale(.95);
-transform:scale(.95);
-color:rgba(0,0,0,.7);
-background:rgba(0,0,0,.3);
-box-shadow:0 0 0 0 rgba(0,0,0,0)
-}
+:root {
+    --spacecol: linear-gradient(140deg,#42275a,#734b6d);
+    --rounding: 15px;
+    --pointer: pointer
 }
 
-.navMenuOption-selected,.selectionCommandsPanel {
-background:#101010!important
+.cardBox-bottompadded {
+    margin-bottom: .6em!important
 }
 
-.paper-icon-button-light:hover,.raised.homeLibraryButton:hover,.button-flat:hover,.playstatebutton-icon-played,.ratingbutton-icon-withrating,.paper-icon-button-light:hover:not(:disabled),.emby-tab-button:hover,.selectLabelFocused,.inputLabelFocused,.textareaLabelFocused,.buttonActive,.button-link {
-color:rgba(120,120,120,0.6)!important
+.itemsContainer>.card>.cardBox {
+    margin-right: .8em
 }
 
-#itemDetailPage .button-link {
-color:inherit!important
+.raised.homeLibraryButton {
+    background: rgba(0,0,0,.3)!important;
+    transition: filter .2s
 }
 
-.listItemIcon {
-background:#0000!important
+.raised.homeLibraryButton:hover {
+    background: rgba(0,0,0,.5)!important;
+    transition: filter .2s
 }
 
-.raised,.fab,a[data-role="button"] {
-background:rgba(40,40,40,0.8)!important;
-transition:all .2s!important
-}
-
-.paper-icon-button-light:hover {
-background-color:rgba(0,0,0,0.4)!important
-}
-
-.raised:hover,.fab:hover,.navMenuOption:hover,.actionSheetMenuItem:hover {
-background:rgba(80,80,80,0.8)!important
-}
-
-.dialog,.toast {
-background-color:rgba(0,0,0,0.8)
-}
-
-.actionSheetMenuItem:hover {
-background-color:rgba(0,164,220,0.2)
-}
-
-.mainDrawer {
-background-color:rgba(0,0,0,0.85)
-}
-
-.navMenuOption:hover {
-background:rgba(0,164,220,0.2)
-}
-
-.formDialogHeader,.formDialogFooter {
-background-color:#101010!important
-}
-
-.formDialogHeader.formDialogHeader-clear.justify-content-center,.formDialogFooter.formDialogFooter-clear.formDialogFooter-flex,.collapseContent {
-background-color:#0000!important
-}
-
-.formDialogContent {
-margin-bottom:6.2em
-}
-
-.dialogContentInner {
-padding:.5em 1em 1em;
-padding-right:1em;
-padding-left:1em
-}
-
-.listItem-indexnumberleft {
-margin:1em
-}
-
-.listItem {
-padding-left:1em
-}
-
-.emby-input,.emby-textarea {
-padding:.4em .55em
-}
-
-.emby-select {
-padding:.35em 1.9em .35em .35em
-}
-
-.selectArrow {
-margin-top:1.05em
-}
-
-.checkboxOutline,.emby-input,.emby-textarea,.emby-select-withcolor {
-background:rgba(0,0,0,0.2);
-border:.01em solid rgba(255,255,255,0.22)
-}
-
-.emby-input:focus,.emby-textarea:focus,.emby-select-withcolor:focus {
-background:rgba(0,0,0,0.5)!important
-}
-
-.emby-textarea:focus,.emby-select-withcolor:focus,.emby-input:focus,.itemSelectionPanel {
-border:.01em solid rgba(40,40,40,0.8)!important
-}
-
-.emby-checkbox:checked + span + .checkboxOutline {
-background-color:rgba(20,20,20,0.8)!important;
-border:.01em solid rgba(255,255,255,0.22)!important
-}
-
-.mdl-spinner__layer-1 {
-border-color:rgba(255,255,255,1)
-}
-
-.mdl-spinner__layer-2 {
-border-color:rgba(128,128,128,1)
-}
-
-.mdl-spinner__layer-3 {
-border-color:rgba(40,40,40,1)
-}
-
-.mdl-spinner__layer-4 {
-border-color:rgba(0,0,0,1)
-}
-
-::-webkit-scrollbar-track-piece {
-background-color:#0000
-}
-
-::-webkit-scrollbar-corner {
-background-color:#0000
-}
-
-::-webkit-scrollbar-thumb {
-background:rgba(120,120,120,0.6)!important;
-border-radius:var(--rounding)
-}
-
-* {
-scrollbar-color:rgba(120,120,120,0.6) #0000!important
-}
-
-.defaultCardBackground1 {
-background-color:#0a0a0a
-}
-
-.defaultCardBackground2 {
-background-color:#141414
-}
-
-.defaultCardBackground3 {
-background-color:#212121
-}
-
-.defaultCardBackground4 {
-background-color:#333
-}
-
-.defaultCardBackground5 {
-background-color:#666
-}
-
-.emby-scrollbuttons {
-cursor:var(--pointer)!important
-}
-
-.sectionTitle {
-cursor:var(--pointer)!important
-}
-
-.playstatebutton-icon-played,.ratingbutton-icon-withrating {
-color:#7d599e!important;
-cursor:pointer!important
-}
-
-.detailImageContainer .card .cardBox {
-margin-top:100px
-}
-
-.nextUpSection {
-display:none
+.homeLibraryButton {
+    min-width: 12em;
+    margin: .4em
 }
 
 .backdropImage {
-display:none
+    filter: blur(60px) saturate(200%) contrast(160%) brightness(25%)
+}
+
+.backgroundContainer.withBackdrop {
+    background-color: transparent
+}
+
+@media all and (min-width:131.25em) {
+    #castContent .card.overflowPortraitCard {
+        width: 6.3vw!important;
+        font-size: 90%!important
+    }
+}
+
+@media all and (min-width:120em) and (max-width:131.25em) {
+    #castContent .card.overflowPortraitCard {
+        width: 6.4vw!important;
+        font-size: 90%!important
+    }
+}
+
+@media all and (min-width:100em) and (max-width:120em) {
+    #castContent .card.overflowPortraitCard {
+        width: 7.6vw!important;
+        font-size: 90%!important
+    }
+}
+
+@media all and (min-width:87.5em) and (max-width:100em) {
+    #castContent .card.overflowPortraitCard {
+        width: 9.3vw!important;
+        font-size: 90%!important
+    }
+}
+
+@media all and (min-width:75em) and (max-width:87.5em) {
+    #castContent .card.overflowPortraitCard {
+        width: 10.5vw!important;
+        font-size: 90%!important
+    }
+}
+
+@media all and (min-width:50em) and (max-width:75em) {
+    #castContent .card.overflowPortraitCard {
+        width: 15vw!important;
+        font-size: 90%!important
+    }
+}
+
+@media all and (min-width:43.75em) and (max-width:50em) {
+    #castContent .card.overflowPortraitCard {
+        width: 20.1vw!important;
+        font-size: 90%!important
+    }
+}
+
+@media all and (min-width:25em) and (max-width:43.75em) {
+    #castContent .card.overflowPortraitCard {
+        width: 31.2vw!important;
+        font-size: 90%!important
+    }
+}
+
+@media all and (max-width:25em) {
+    #castContent .card.overflowPortraitCard {
+        width: 40vw!important;
+        font-size: 90%!important
+    }
+}
+
+.cardPadder {
+    background-color: #0000!important;
+    box-shadow: none!important
+}
+
+@media all and (min-width:131.25em) {
+    #castContent .cardScalable {
+        width: calc(6.3vw - .6em)!important;
+        height: calc(6.3vw - .6em)!important
+    }
+}
+
+@media all and (min-width:120em) and (max-width:131.25em) {
+    #castContent .cardScalable {
+        width: calc(6.4vw - .6em)!important;
+        height: calc(6.4vw - .6em)!important
+    }
+}
+
+@media all and (min-width:100em) and (max-width:120em) {
+    #castContent .cardScalable {
+        width: calc(7.6vw - .6em)!important;
+        height: calc(7.6vw - .6em)!important
+    }
+}
+
+@media all and (min-width:87.5em) and (max-width:100em) {
+    #castContent .cardScalable {
+        width: calc(9.3vw - .6em)!important;
+        height: calc(9.3vw - .6em)!important
+    }
+}
+
+@media all and (min-width:75em) and (max-width:87.5em) {
+    #castContent .cardScalable {
+        width: calc(10.5vw - .6em)!important;
+        height: calc(10.5vw - .6em)!important
+    }
+}
+
+@media all and (min-width:50em) and (max-width:75em) {
+    #castContent .cardScalable {
+        width: calc(15vw - .6em)!important;
+        height: calc(15vw - .6em)!important
+    }
+}
+
+@media all and (min-width:43.75em) and (max-width:50em) {
+    #castContent .cardScalable {
+        width: calc(20.1vw - .6em)!important;
+        height: calc(20.1vw - .6em)!important
+    }
+}
+
+@media all and (min-width:25em) and (max-width:43.75em) {
+    #castContent .cardScalable {
+        width: calc(31.2vw - .6em)!important;
+        height: calc(31.2vw - .6em)!important
+    }
+}
+
+@media all and (max-width:25em) {
+    #castContent .cardScalable {
+        width: calc(40vw - .6em)!important;
+        height: calc(40vw - .6em)!important
+    }
+}
+
+.detailImageContainer .card {
+    position: fixed
+}
+
+.mainDetailButtons {
+    font-size: 120%
+}
+
+@media all and (max-width:100em) {
+    .mainDetailButtons {
+        font-size: 155%
+    }
+}
+
+.detailSectionContent {
+    max-width: 66em
+}
+
+#loginPage .readOnlyContent,#loginPage form,.trackSelections {
+    max-width: 22em
+}
+
+#loginPage .raised.cancel.block.btnForgotPassword.emby-button,#loginPage h1,.detailLogo {
+    display: none
+}
+
+.detailPagePrimaryContainer {
+    background: 0 0!important
+}
+
+@media all and (min-width:32em) {
+    .itemBackdrop {
+        display: none
+    }
+
+    .layout-desktop .detailRibbon {
+        margin-top: 13vh
+    }
+}
+
+@media all and (max-width:32em) {
+    .itemBackdrop {
+        width: 100vw!important;
+        height: 100vh!important;
+        position: fixed
+    }
+
+    .detailPageWrapperContainer {
+        margin-top: 5em!important
+    }
+
+    .itemBackdrop {
+        filter: blur(45px) saturate(200%) contrast(160%) brightness(25%)
+    }
+}
+
+@media (min-aspect-ratio:1.98/1) {
+    .detailImageContainer .card {
+        width: 21vw
+    }
+
+    .detailPagePrimaryContainer {
+        padding-left: 28.45vw!important
+    }
+
+    .detailPageContent {
+        padding-left: 28.45vw
+    }
+}
+
+@media (min-aspect-ratio:2.7/1) {
+    .detailImageContainer .card {
+        width: 16vw
+    }
+
+    .detailPagePrimaryContainer {
+        padding-left: 23.45vw!important
+    }
+
+    .detailPageContent {
+        padding-left: 23.45vw
+    }
+}
+
+.listItem:hover {
+    transition: .2s;
+    background: rgba(0,0,0,.4)
+}
+
+.listItemImage.listItemImage-large.itemAction.lazy {
+    transition: filter .2s
+}
+
+.listItemImageButton-icon {
+    padding: 0
+}
+
+.secondary.listItem-overview.listItemBodyText {
+    height: 61px;
+    margin: 0
+}
+
+.listItemImageButton {
+    margin: auto;
+    font-size: 1.6em!important
+}
+
+@media all and (min-width:100em) {
+    .listItemImage.listItemImage-large.itemAction.lazy {
+        height: 110px
+    }
+
+    .listItem-content {
+        height: 115px
+    }
+
+    .secondary.listItem-overview.listItemBodyText {
+        height: 4em;
+        margin: 0
+    }
+}
+
+@media all and (max-width:100em) {
+    .listItemImage.listItemImage-large.itemAction.lazy {
+        height: 80px
+    }
+
+    .listItem-content {
+        height: 85px
+    }
+
+    .secondary.listItem-overview.listItemBodyText {
+        height: 2.5em;
+        margin: 0
+    }
+}
+
+.missingIndicator,.unairedIndicator {
+    background: #ae3030eb;
+    padding: .3em .6em;
+    border-radius: var(--rounding);
+    color: #fff
+}
+
+#apiKeysPage,#dashboardGeneralPage,#dashboardPage,#devicesPage,#itemDetailPage,#liveTvSettingsPage,#liveTvStatusPage,#logPage,#networkingPage,#notificationSettingsPage,#scheduledTasksPage,#serverActivityPage,#userProfilesPage {
+    mask-image: linear-gradient(180deg,transparent 0,transparent 60px,#000 90px);
+    -webkit-mask-image: linear-gradient(180deg,transparent 0,transparent 60px,#000 90px);
+    overflow: scroll
+}
+
+@media all and (min-width:100em) {
+    #indexPage,#moviesPage,#musicRecommendedPage,#tvRecommendedPage {
+        mask-image: linear-gradient(180deg,transparent 0,transparent 70px,#000 120px);
+        -webkit-mask-image: linear-gradient(180deg,transparent 0,transparent 70px,#000 120px);
+        overflow: scroll
+    }
+
+    #dlnaSettingsPage,#encodingSettingsPage,#mediaLibraryPage,#pluginsPage {
+        mask-image: linear-gradient(180deg,transparent 0,transparent 60px,#000 90px);
+        -webkit-mask-image: linear-gradient(180deg,transparent 0,transparent 60px,#000 90px);
+        overflow: scroll
+    }
+}
+
+@media all and (max-width:100em) {
+    #dlnaSettingsPage,#encodingSettingsPage,#indexPage,#mediaLibraryPage,#moviesPage,#musicRecommendedPage,#pluginsPage,#tvRecommendedPage {
+        mask-image: linear-gradient(180deg,transparent 0,transparent 100px,#000 130px);
+        -webkit-mask-image: linear-gradient(180deg,transparent 0,transparent 100px,#000 130px);
+        overflow: scroll;
+        margin-top: 20px
+    }
+}
+
+.skinHeader {
+    background: 0 0!important;
+    background-color: transparent!important
+}
+
+.headerTabs.sectionTabs {
+    text-size-adjust: 110%;
+    font-size: 110%
+}
+
+.pageTitle {
+    margin-top: auto;
+    margin-bottom: auto
+}
+
+.pageTitleWithDefaultLogo {
+    background-image: url(../../assets/img/banner-light.png);
+    opacity: 0
+}
+
+.emby-tab-button {
+    padding: 1.75em 1.7em
+}
+
+#loginPage .padded-left.padded-right.padded-bottom-page {
+    margin-top: 50px
+}
+
+#loginPage {
+    background-image: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),url(https://theme.watchingweek.cz/20220328_084516224_iOS.jpg)!important;
+    background-size: cover!important;
+    background-position: center!important
+}
+
+.innerCardFooter {
+    box-shadow: none
+}
+
+.countIndicator,.innerCardFooter,.playedIndicator {
+    background: rgba(0,0,0,.4)
+}
+
+.playedIndicator {
+    box-shadow: none
+}
+
+.countIndicator {
+    box-shadow: none
+}
+
+.formDialogHeader {
+    border-top-left-radius: var(--rounding);
+    border-top-right-radius: var(--rounding)
+}
+
+.formDialogFooter {
+    border-bottom-left-radius: var(--rounding);
+    border-bottom-right-radius: var(--rounding)
+}
+
+.blurhash-canvas,.button-flat,.cardContent,.cardContent-button,.cardContent-shadow,.cardImage,.cardImageContainer,.cardOverlayButton-hover,.cardOverlayButtonIcon,.cardOverlayContainer,.cardPadder,.chapterThumb,.chapterThumbContainer,.chapterThumbTextContainer,.checkboxOutline,.countIndicator,.dialog,.emby-input,.emby-select-withcolor,.emby-textarea,.fab,.headerButton,.innerCardFooter,.itemDetailImage,.itemSelectionPanel,.listItem-border,.listItem:hover,.listItemButton,.listItemIcon,.listItemImage,.listItemImageButton,.multiSelectCheckboxOutline,.nowPlayingPageImage,.paper-icon-button-light,.paperList,.playedIndicator,.primaryImageWrapper>img,.raised,.sessionNowPlayingInnerContent,.toast,.upNextContainer,.upNextDialog-poster-img,.visualCardBox {
+    border-radius: var(--rounding)!important;
+    cursor: var(--pointer)
+}
+
+.osdPoster img {
+    border-radius: var(--rounding);
+    border: 0
+}
+
+.mdl-slider::-moz-range-thumb {
+    border-radius: var(--rounding)
+}
+
+.mdl-slider::-ms-thumb {
+    border-radius: var(--rounding)
+}
+
+.mdl-slider::-webkit-slider-thumb {
+    border-radius: var(--rounding)
+}
+
+div[data-role=controlgroup] a[data-role=button]:first-child {
+    border-bottom-left-radius: var(--rounding);
+    border-top-left-radius: var(--rounding)
+}
+
+div[data-role=controlgroup] a[data-role=button]:last-child {
+    border-bottom-right-radius: var(--rounding);
+    border-top-right-radius: var(--rounding)
+}
+
+#dashboardPage .cardContent,#dashboardPage .sessionNowPlayingInnerContent,#divVirtualFolders .cardContent,#divVirtualFolders .cardImageContainer,#userProfilesPage .cardContent,#userProfilesPage .cardImage {
+    border-radius: var(--rounding) var(--rounding)0 0!important
+}
+
+.appfooter {
+    background: rgba(0,0,0,.9)
+}
+
+.subtitleappearance-preview {
+    background: linear-gradient(140deg,#444,#111)!important
+}
+
+.layout-mobile :not(.sectionTitleContainer-cards)>.sectionTitle-cards {
+    padding-top: 0
+}
+
+.sectionTitle {
+    margin-left: .4em!important;
+    margin-top: .2em!important;
+    margin-bottom: .2em!important
+}
+
+.sectionTitleTextButton>.material-icons {
+    margin: 0
+}
+
+.layout-mobile .sectionTitleTextButton>.material-icons {
+    padding-top: .2em
+}
+
+.nowPlayingBarCurrentTime {
+    width: 6em
+}
+
+.osdTextContainer {
+    margin: .2em 0 0!important;
+    padding-left: .5em!important;
+    padding-right: .5em!important
+}
+
+.headerUserButtonRound {
+    border-radius: 50px!important
+}
+
+.innerCardFooter.fullInnerCardFooter.innerCardFooterClear {
+    background: rgba(0,0,0,.7);
+    border-radius: 0!important;
+    background: 0 0
+}
+
+.itemProgressBar {
+    background: #0000
+}
+
+.playbackProgress>div {
+    background-color: rgba(255,255,255,.75)
+}
+
+.itemProgressBarForeground,.transcodingProgress>div {
+    background-color: #7d599e
+}
+
+.cardIndicators {
+    right: 0;
+    top: 0
+}
+
+.indicator,.navMenuOption::before {
+    background: var(--spacecol)!important
+}
+
+.indicator {
+    border-radius: 0 0 0 5px;
+    padding: .1em;
+    box-shadow: 0 0 10px 1px #000;
+    color: #fff
+}
+
+.indicators {
+    right: 0;
+    top: 0
+}
+
+@media all and (min-width:70em) {
+    .cardOverlayFab-primary {
+        background-color: #00000000
+    }
+
+    .cardOverlayButtonIcon {
+        background-color: #00000000!important
+    }
+
+    .cardOverlayContainer {
+        background-color: rgba(0,0,0,.7)
+    }
+}
+
+@media all and (max-width:70em) {
+    .cardOverlayButtonIcon {
+        background-color: rgba(0,0,0,.5)!important
+    }
+
+    .cardOverlayButton {
+        padding: .3em
+    }
+}
+
+.button-flat:hover {
+    background: rgba(0,0,0,.4)
+}
+
+.button-flat {
+    padding: .5em!important;
+    margin: .2em!important
+}
+
+#user_usage_report_table,.detailTable {
+    background: rgba(0,0,0,.5);
+    border-radius: var(--rounding)
+}
+
+.detailTableBodyRow-shaded {
+    background: #0000!important
+}
+
+.infoBanner {
+    background: #101010
+}
+
+.navMenuOptionText {
+    margin-top: 0
+}
+
+.navMenuOption {
+    background: 0 0!important;
+    flex-grow: 0!important
+}
+
+.navMenuOption::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    opacity: 0;
+    transition: opacity .2s
+}
+
+.backgroundProgress>div {
+    background-color: #0000
+}
+
+.cardImageContainer,.visualCardBox {
+    box-shadow: none
+}
+
+.mdl-switch__input:checked+.mdl-switch__label+.mdl-switch__trackContainer>.mdl-switch__track {
+    background: rgba(120,120,120,.6)
+}
+
+.mdl-switch__input:checked+.mdl-switch__label+.mdl-switch__trackContainer>.mdl-switch__thumb {
+    background: #fff
+}
+
+.dashboardSection h3 {
+    margin-left: .5em
+}
+
+.sessionCardFooter {
+    border: 0
+}
+
+.paperList,.visualCardBox {
+    background-color: rgba(0,0,0,.5)
+}
+
+.listItem-border {
+    border-color: transparent!important
+}
+
+fieldset {
+    border: 1px solid rgba(40,40,40,.8);
+    border-radius: .4em
+}
+
+progress {
+    background: rgba(0,0,0,.5)!important;
+    border-radius: var(--rounding);
+    border: 1px solid rgba(255,255,255,.22)
+}
+
+progress::-webkit-progress-bar {
+    background: rgba(0,0,0,.5)!important;
+    border-radius: var(--rounding);
+    border: 0 solid rgba(255,255,255,.22)
+}
+
+progress::-moz-progress-bar {
+    background-color: rgba(255,255,255,.75);
+    border-radius: var(--rounding)
+}
+
+progress::-webkit-progress-value {
+    background-color: rgba(255,255,255,.75);
+    border-radius: var(--rounding)
+}
+
+#divRunningTasks span,#scheduledTasksPage span {
+    color: rgba(255,255,255,.75)!important
+}
+
+.taskProgressInner,.taskProgressOuter {
+    border-radius: var(--rounding)!important
+}
+
+.taskProgressOuter {
+    background: rgba(0,0,0,.5)!important;
+    border: 1px solid rgba(255,255,255,.22)
+}
+
+.taskProgressInner {
+    background: rgba(255,255,255,.75)!important
+}
+
+.chapterThumb {
+    height: 14vh;
+    min-width: 14vh
+}
+
+.chapterThumbText {
+    font-size: 1em
+}
+
+.sliderBubble {
+    background: #0000
+}
+
+.progressring-spiner {
+    border-color: rgba(var(--accent));
+    border-width: .35em
+}
+
+.progressring {
+    margin: .4em
+}
+
+.progressring-bg {
+    display: none
+}
+
+.blurhash-canvas {
+    filter: opacity(60%) saturate(60%)
+}
+
+div[data-role=controlgroup] a.ui-btn-active {
+    background: rgba(0,0,0,.5)!important;
+    color: #fff!important
+}
+
+a[data-role=button]:hover {
+    background: rgba(80,80,80,.8)!important
+}
+
+div[data-role=controlgroup] a[data-role=button]+a[data-role=button] {
+    margin: 0!important
+}
+
+.starIcon {
+    color: rgba(255,255,255,.8)
+}
+
+.endTimeText,.startTimeText {
+    width: 3.4em;
+    display: block;
+    text-align: center
+}
+
+.osdTitle {
+    margin-left: .5em
+}
+
+.mdl-slider-background-lower {
+    background-color: #fff
+}
+
+.mdl-slider::-moz-range-thumb {
+    background: #fff
+}
+
+.mdl-slider::-ms-thumb {
+    background: #fff
+}
+
+.mdl-slider::-webkit-slider-thumb {
+    background: #fff
+}
+
+.iconOsdProgressInner {
+    background: #fff
+}
+
+.videoOsdBottom {
+    background: rgba(0,0,0,.7);
+    padding-top: 1em
+}
+
+.skinHeader-withBackground.osdHeader {
+    background: rgba(0,0,0,.7)!important;
+    height: 5em
+}
+
+.nowPlayingPageImage {
+    border: 0
+}
+
+.upNextDialog-countdownText {
+    color: #fff
+}
+
+.syncPlayIconCircle {
+    color: #fff!important;
+    text-shadow: none!important
+}
+
+.navMenuOption-selected,.selectionCommandsPanel {
+    background: #101010!important
+}
+
+.button-flat:hover,.button-link,.buttonActive,.emby-tab-button:hover,.inputLabelFocused,.paper-icon-button-light:hover,.paper-icon-button-light:hover:not(:disabled),.playstatebutton-icon-played,.raised.homeLibraryButton:hover,.ratingbutton-icon-withrating,.selectLabelFocused,.textareaLabelFocused {
+    color: rgba(120,120,120,.6)!important
+}
+
+#itemDetailPage .button-link {
+    color: inherit!important
+}
+
+.listItemIcon {
+    background: #0000!important
+}
+
+.fab,.raised,a[data-role=button] {
+    background: rgba(40,40,40,.8)!important;
+    transition: all .2s!important
+}
+
+.paper-icon-button-light:hover {
+    background-color: rgba(0,0,0,.4)!important
+}
+
+.actionSheetMenuItem:hover,.fab:hover,.navMenuOption:hover,.raised:hover {
+    background: rgba(80,80,80,.8)!important
+}
+
+.dialog,.toast {
+    background-color: rgba(0,0,0,.8)
+}
+
+.actionSheetMenuItem:hover {
+    background-color: rgba(0,164,220,.2)
+}
+
+.mainDrawer {
+    background-color: rgba(0,0,0,.85)
+}
+
+.navMenuOption:hover {
+    background: rgba(0,164,220,.2)
+}
+
+.formDialogFooter,.formDialogHeader {
+    background-color: #101010!important
+}
+
+.collapseContent,.formDialogFooter.formDialogFooter-clear.formDialogFooter-flex,.formDialogHeader.formDialogHeader-clear.justify-content-center {
+    background-color: #0000!important
+}
+
+.formDialogContent {
+    margin-bottom: 6.2em
+}
+
+.dialogContentInner {
+    padding: .5em 1em 1em
+}
+
+.listItem-indexnumberleft {
+    margin: 1em
+}
+
+.listItem {
+    padding-left: 1em
+}
+
+.emby-input,.emby-textarea {
+    padding: .4em .55em
+}
+
+.emby-select {
+    padding: .35em 1.9em .35em .35em
+}
+
+.selectArrow {
+    margin-top: 1.05em
+}
+
+.checkboxOutline,.emby-input,.emby-select-withcolor,.emby-textarea {
+    background: rgba(0,0,0,.2);
+    border: .01em solid rgba(255,255,255,.22)
+}
+
+.emby-input:focus,.emby-select-withcolor:focus,.emby-textarea:focus {
+    background: rgba(0,0,0,.5)!important
+}
+
+.emby-input:focus,.emby-select-withcolor:focus,.emby-textarea:focus,.itemSelectionPanel {
+    border: .01em solid rgba(40,40,40,.8)!important
+}
+
+.emby-checkbox:checked+span+.checkboxOutline {
+    background-color: rgba(20,20,20,.8)!important;
+    border: .01em solid rgba(255,255,255,.22)!important
+}
+
+.mdl-spinner__layer-1 {
+    border-color: #fff
+}
+
+.mdl-spinner__layer-2 {
+    border-color: gray
+}
+
+.mdl-spinner__layer-3 {
+    border-color: #282828
+}
+
+.mdl-spinner__layer-4 {
+    border-color: #000
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #0000
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #0000
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(120,120,120,.6)!important;
+    border-radius: var(--rounding)
+}
+
+* {
+    scrollbar-color: rgba(120,120,120,.6) #0000!important
+}
+
+.defaultCardBackground1 {
+    background-color: #0a0a0a
+}
+
+.defaultCardBackground2 {
+    background-color: #141414
+}
+
+.defaultCardBackground3 {
+    background-color: #212121
+}
+
+.defaultCardBackground4 {
+    background-color: #333
+}
+
+.defaultCardBackground5 {
+    background-color: #666
+}
+
+.emby-scrollbuttons,.sectionTitle {
+    cursor: var(--pointer)!important
+}
+
+.playstatebutton-icon-played,.ratingbutton-icon-withrating {
+    color: #7d599e!important;
+    cursor: pointer!important
+}
+
+.detailImageContainer .card .cardBox {
+    margin-top: 100px
+}
+
+.backdropImage,.nextUpSection {
+    display: none
 }
 
 .backgroundContainer {
-background-image:linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),url(https://cdn.jsdelivr.net/gh/TheVodouch/jellyfin-css@0ed1fefb808dbba704021e622348c991d9cd8656/background.jpg)!important;
-background-size:cover!important;
-background-position:center!important
+    background-image: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),url(https://cdn.jsdelivr.net/gh/TheVodouch/jellyfin-css@0ed1fefb808dbba704021e622348c991d9cd8656/background.jpg)!important;
+    background-size: cover!important;
+    background-position: center!important
 }
 
 .overflowSquareCard .cardImageContainer::after {
-content:"";
-background:inherit;
-z-index:0;
-position:absolute;
-width:100%;
-height:100%;
-background-size:100%;
-transition:all .15s
+    content: "";
+    background: inherit;
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    transition: all .15s
 }
 
 .overflowSquareCard:hover .cardImageContainer::after {
-background-size:120%
+    background-size: 120%
 }
 
-:not(.detailImageContainer)
-> .card:not(.overflowSquareCard)
-.cardImageContainer::before {
-content:"";
-position:absolute;
-top:0;
-left:0;
-right:0;
-bottom:0;
-background:inherit;
-background-size:cover;
-transition:.15s
+:not(.detailImageContainer)>.card:not(.overflowSquareCard) .cardImageContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    background-size: cover;
+    transition: .15s
 }
 
 .card:not(.overflowSquareCard):hover .cardImageContainer::before {
-transform:scale(1.2)
+    transform: scale(1.2)
 }
 
-.layout-mobile .detailPagePrimaryContainer {
-padding-top:50vh !important;
-}
-
-.layout-mobile .infoWrapper{
-padding-top:50vh !important;
+.layout-mobile .detailPagePrimaryContainer,.layout-mobile .infoWrapper {
+    padding-top: 50vh!important
 }
