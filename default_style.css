@@ -480,7 +480,7 @@ body,h1,h2,h3,h4 {
 }
 
 #loginPage {
-    background-image: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),url(https://theme.watchingweek.cz/20220328_084516224_iOS.jpg)!important;
+    background-image: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),url(https://rawcdn.githack.com/TheVodouch/jellyfin-css/5098549ce469224029bb31659bcda8e1836fd778/background.jpg)!important;
     background-size: cover!important;
     background-position: center!important
 }
@@ -1038,7 +1038,7 @@ div[data-role=controlgroup] a[data-role=button]+a[data-role=button] {
 }
 
 .backgroundContainer {
-    background-image: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),url(https://cdn.jsdelivr.net/gh/TheVodouch/jellyfin-css@0ed1fefb808dbba704021e622348c991d9cd8656/background.jpg)!important;
+    background-image: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),url(https://rawcdn.githack.com/TheVodouch/jellyfin-css/5098549ce469224029bb31659bcda8e1836fd778/background.jpg)!important;
     background-size: cover!important;
     background-position: center!important
 }
