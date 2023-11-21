@@ -1075,5 +1075,5 @@ div[data-role=controlgroup] a[data-role=button]+a[data-role=button] {
 }
 
 .layout-mobile .detailPagePrimaryContainer,.layout-mobile .infoWrapper {
-    padding-top: 50vh!important
+    padding-top: 5vh!important
 }
