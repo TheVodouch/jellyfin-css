@@ -1,4 +1,4 @@
-/*ver 2.1 optimized */
+/*ver 2.2 optimized */
 
 @import "https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&display=swap";
 
@@ -1119,4 +1119,12 @@ transition:.15s
 
 .card:not(.overflowSquareCard):hover .cardImageContainer::before {
 transform:scale(1.2)
+}
+
+.layout-mobile .detailPagePrimaryContainer {
+padding-top:50vh !important;
+}
+
+.layout-mobile .infoWrapper{
+padding-top:50vh !important;
 }
