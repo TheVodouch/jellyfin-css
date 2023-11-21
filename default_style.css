@@ -1,4 +1,4 @@
-/*ver 2.4 optimized/beautified */
+/*ver 2.5 optimized/beautified */
 
 @import "https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&display=swap";
 
@@ -1075,5 +1075,5 @@ div[data-role=controlgroup] a[data-role=button]+a[data-role=button] {
 }
 
 .layout-mobile .detailPagePrimaryContainer,.layout-mobile .infoWrapper {
-    padding-top: 5vh!important
+    padding-top: 6vh!important
 }
